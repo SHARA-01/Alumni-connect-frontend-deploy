@@ -21,7 +21,7 @@ const JobPost = () => {
                 console.error('Error fetching data:', error);
             }
         };
-        if (jobs.length === 0 || jobprevId != jobId) {
+        if (jobs?.length === 0 || jobprevId != jobId) {
             fetchData();
             setJobprevId(jobId)
 

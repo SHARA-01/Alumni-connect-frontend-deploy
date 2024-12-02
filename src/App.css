@@ -1,0 +1,336 @@
+/* import 'react-toastify/dist/ReactToastify.css' */
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+*/
+
+.custom-root {
+  margin: 0;
+  padding: 0;
+  background-color:#EEEEEE;
+} 
+
+.bg-image {
+  background-image: url('./assets/img/bg-progile.jpg');
+  /* You can also specify other background properties */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  /* Add more background properties as needed */
+}
+
+.bg-img {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-blur {
+  backdrop-filter: blur(3px);
+}
+
+.sticky-bg-white-blur {
+  position: sticky;
+  position: -webkit-sticky;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  
+
+}
+.bg-white-blur {
+
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+
+}
+
+/* .bg-img-set {
+
+} */
+
+.quill-editor {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none  !important;
+}
+
+
+/* landing page css */
+
+
+body {
+  background-color: #fff;
+}
+
+/*  ========================= ' LANDING SECTION ' starts here ====================  */
+.landingPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  background-color: #fff;
+}
+.landingPage-main {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1270px;
+  padding: 2rem 2rem;
+  /* gap: 2rem; */
+}
+.landingPage-main .left {
+  /* background-color: yellow; */
+  width: 50%;
+  padding-right: 3rem;
+}
+.landingPage-main .left .landing-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.landingPage-main .left .landing-desc p:nth-child(1) {
+  color: var(--main-dark-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.landingPage-main .left .landing-desc p:nth-child(2) {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+.landingPage-main .left .landing-desc p:nth-child(2) span {
+  color: var(--main-dark-color);
+}
+.landingPage-main .right {
+  /* background-color: yellow; */
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.landingPage-main .right .col1
+.landingPage-main .right .col2
+.landingPage-main .right .col3 {
+  display: flex;
+  flex-direction: column;
+  width: 33% !important;
+  /* width: 40rem; */
+}
+.landingPage-main .right .col2 .col1 ,
+.landingPage-main .right .col2 .col2 ,
+.landingPage-main .right .col2 .col3 {
+  transform: translateY(-1rem);
+}
+.landingPage-main .right .col1 .col2 img{
+
+  border-radius: 10px;
+  margin: 0.8rem;
+  margin-right: 0 !important;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 10rem;
+  object-fit: cover;
+}
+.landingPage-main .right .col2 .col1 img {
+  border-radius: 10px;
+  margin: 0.8rem;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 10rem;
+  object-fit: cover;
+}
+.landingPage-main .right .col2 .col2 img {
+  border-radius: 10px;
+  margin: 0.8rem;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 10rem;
+  object-fit: cover;
+  
+}
+.landingPage-main .right .col2 .col3 img {
+  border-radius: 10px;
+  margin: 0.8rem;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 10rem;
+  object-fit: cover;
+}
+.landingPage-main .right .col3 .col1 img {
+  border-radius: 10px;
+  margin: 0.8rem;
+  margin-left: 0 !important;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 13rem;
+  object-fit: cover;
+  
+}
+.landingPage-main .right .col3 .col2 img {
+  border-radius: 10px;
+  margin: 0.8rem;
+  margin-left: 0 !important  ;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 10rem;
+  object-fit: cover;
+  transform: translateY(-3rem);
+}
+
+
+.start-btn {
+  margin-top: 2rem;
+  background: linear-gradient(to right, var(--main-dark-color), var(--main-light-color));
+  box-shadow: 0 2px 5px rgba(36, 36, 36, 0.685);
+  padding: 1.2rem 2rem ;
+  width: fit-content;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.start-btn:hover {
+  transition: all 0.3s linear;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 5px 10px rgba(36, 36, 36, 0.685);
+}
+.start-btn p {
+  color: #fff !important;
+  
+}
+.nav-link {
+  text-decoration: none;
+  border-right: none;
+}
+
+.col-icon-common {
+  padding: 0.4rem 0.6rem;
+  background: linear-gradient(to bottom, var(--main-dark-color), var(--main-light-color));
+  border-radius: 6px;
+  color: #fff;
+  width: fit-content;
+
+}
+.col12-icon {
+  transform: translate(3rem, -1.5rem);
+  rotate: -15deg;
+}
+.col31-icon {
+  transform: translate(2rem, -18rem);
+}
+.col32-icon {
+  rotate: 15deg;
+  transform: translate(4rem, -5.5rem);
+
+}
+
+
+@media (max-width: 1270px) {
+  .landingPage-main {
+      width: 100%;
+  }
+}
+
+
+@media (max-width: 1080px) {
+  .landingPage-main .right {
+      display: none;
+  }
+  .landingPage-main {
+      align-items: center;
+      justify-content: center;
+  }
+  .landingPage-main .left {
+      width: 590px;
+      padding-right: 0;
+  }
+
+}
+
+/*  ========================= ' OUR SERVICE ' starts here ====================  */
+.ourservice {
+  width: 1270px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.our-service-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  padding: 5rem 0;
+  background-color: #fff;
+}
+.our-service-main .service-heading p {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.service-desc {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-common {
+  width: 18rem;
+  box-shadow: 0 0 10px rgb(217, 217, 217);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.service-common .image {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;   
+}
+.service-desc-4 .image img {
+  height: 3rem;
+  width: auto;
+}
+/* .service-desc-4 .image img , */
+.service-desc-1 .image img ,
+.service-desc-2 .image img ,
+.service-desc-3 .image img ,
+.service-desc-5 .image img ,
+.service-desc-6 .image img ,
+.service-desc-7 .image img ,
+.service-desc-8 .image img {
+  height: 5rem;
+  width: auto;
+}
+.service-common .heading p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.service-desc .desc {
+  color: #333;
+}
+
+@media (max-width: 1270px) {
+  .ourservice {
+      width: 100%;
+  }
+  
+}
+/*  ========================= ' OUR SERVICE ' ends here ====================  */
